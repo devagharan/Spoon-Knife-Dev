@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "quicksight:CreateUser"
+		"quicksight:CreateReader"
+		"quicksight:CreateAdmin"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:quicksight::<YOUR_AWS_ACCOUNTID>:user/${aws:userid}"
+        }
+    ]
+}
